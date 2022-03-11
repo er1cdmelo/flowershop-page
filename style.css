@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap%27');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Verdana;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fcf947;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+
+.hero-img {
+    background: url(/img/main-img.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+    filter: blur(3px);
+    position: absolute;
+    z-index: -1;
+}
+
+header {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 5rem;
+    transition: .5s;
+    color: #ffffff00;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    letter-spacing: 10px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+nav {
+    width: 30%;
+    position: absolute;
+    bottom: 18%;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav-list a {
+    color: white;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.nav-list li {
+    transition: .3s;
+}
+
+.nav-list li:hover {
+    transform: scale(1.1);
+}
+
+.info:hover {
+    color: #85f8e5
+}
+
+.flowers:hover {
+    color: #fcf947
+}
+
+.contact:hover {
+    color: #59ffa4
+}
+
+.info-section {
+    width: 60%;
+    height: 150vh;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.to-find {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.text-area {
+    width: 40%;
+    height: 55%;
+    border-left: 8px solid #c6f3d5;
+    padding: 3rem 2.5rem;
+    position: relative;
+    margin-top: 3.5rem;
+}
+
+
+.text-area h1 {
+    font-size: 3.5em;
+}
+
+.text-area .arrow-down {
+    position: absolute;
+    left: 12%;
+    bottom: 10%;
+    width: 10%;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.arrow-down:hover {
+    transform: scale(1.2);
+}
+
+.info-section .svg-info {
+    width: 45%;
+}
+
+.map-area {
+    width: 100%;
+    min-height: 450px;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 400px;
+    width: 700px;
+    transition: .3s;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 400px;
+    width: 700px;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+/* flowers section */
+
+.flowers-section {
+    width: 60%;
+    height: 150vh;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 2rem 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.flowers-section .title {
+    font-size: 2.5rem;
+}
+
+.title span {
+    color: #FCF947
+}
+
+.flowers-select{
+    
+    width: 40%;
+    margin-top: 2rem;
+}
+
+.flowers-section ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #92E3A9;
+    border-radius: 30px;
+}
+
+.flowers-section ul li{
+    padding: .5rem .5rem;
+    text-align: center;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.flowers-select ul  li:first-child{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.flowers-select ul  li:last-child{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+.flowers-select ul  li:hover{
+    background-color: #a2f0b8;
+}
+
+.image-gallery{
+    width: 90%;
+    height: 80%;
+    margin-top: 2rem;
+    padding: 30px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.photo{
+    justify-content: space-between;
+    display: flex;
+}
+
+.photo:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.photo .img{
+    background-color: #22222c;
+    width: 45%
+}
+
+.photo:first-child .img{
+    background: url(/img/rose-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.photo:nth-child(2) .img{
+    background: url(/img/rose-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.photo:last-child .img{
+    background: url(/img/rose-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.text{
+    width: 45%;
+}
+
+
+@media (max-width: 600px) {
+
+    body{
+        background-color: #f5f5f5;
+    }
+
+    .hero-img {
+        height: 45vh;
+    }
+
+    header {
+        height: 45vh
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+
+    nav {
+        width: 70%;
+        position: absolute;
+        bottom: 18%;
+    }
+
+    .nav-list {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    .nav-list a {
+        font-size: 1rem;
+    }
+
+    .info-section, .flowers-section {
+        width: 80%;
+    }
+
+    .info-section{
+        justify-content: space-between;
+    }
+
+    .to-find {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .text-area {
+        width: 90%;
+        height: 55%;
+        border-left: 8px solid #c6f3d5;
+        padding: 1rem 1rem;
+        position: relative;
+        margin-top: 1rem
+    }
+    
+    
+    .text-area h1 {
+        font-size: 3em;
+    }
+
+    .text-area .arrow-down {
+        display: none;
+    
+    }
+
+    .info-section .svg-info {
+        width: 120%;
+    }
+
+    .map-area {
+        width: 100%;
+        min-height: 100px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mapouter {
+        position: relative;
+        text-align: right;
+        height: 300px;
+        width: 100%;
+        transition: .3s;
+    }
+
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 300px;
+        width: 100%;
+        border-radius: 15px;
+        transition: .3s;
+    }
+
+    .flowers-select{
+    
+        width: 80%;
+        margin-top: 2rem;
+    }
+
+    .flowers-section ul li{
+        padding: .5rem .8rem;
+        text-align: center;
+        width: 100%;
+        color: white;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .photo .img{
+        background-color: #22222c;
+        width: 100%;
+        height: 60%;
+    }
+
+    .photo{
+        background: #f5f5f5;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid white;
+        display: flex;
+        min-height: 300px;
+    }
+
+    .text{
+        font-size: .8rem;
+        width: 100%;
+        height: 40%;
+        text-align: center;
+        
+    }
+
+    .image-gallery{
+        width: 90%;
+        height: 80%;
+        margin-top: 2rem;
+        padding: 30px;
+        gap: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .photo:nth-child(2){
+        flex-direction: column;
+    }
+
+}
