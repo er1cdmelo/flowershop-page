@@ -36,6 +36,7 @@ const ulist = document.querySelector('#flower-select');
 ulist.addEventListener('click', showEvent)
 
 function showEvent(e){
+    console.log(e.target.value);
     if(e.target.id === 'roses'){
         e.target.style.backgroundColor = corselecionado;
         tulips.style.backgroundColor = corpadrao
